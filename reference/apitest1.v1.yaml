@@ -1,0 +1,28 @@
+swagger: '2.0'
+info:
+  title: apitest1
+  version: '1.0'
+host: 'localhost:3000'
+schemes:
+  - https
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /version:
+    get:
+      summary: get version
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+          examples:
+            example-1:
+              version: '0.14'
+      operationId: get-version
+      description: 'description for '
+definitions: {}
+basePath: /register
